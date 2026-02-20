@@ -32,5 +32,4 @@ The assistant helps users with study planning, reminders with reasons, note gene
 ## ⚙️ Installation
 ### 1) Clone the repo
 ```bash
-git clone https://github.com/yourusername/nova-ai.git
-cd nova-ai
+git clone https:https://github.com/Dhananjay2305/Named-AI-Assistant
