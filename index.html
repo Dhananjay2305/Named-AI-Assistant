@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NOVA AI — Your named assistant</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <meta name="theme-color" content="#0b1220" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="topbar">
+        <div class="container topbar__inner">
+          <a class="brand" href="#/">
+            <span class="brand__mark">N</span>
+            <span class="brand__name">NOVA AI</span>
+          </a>
+          <nav class="nav">
+            <a class="nav__link" href="#/features">Features</a>
+            <a class="nav__link" href="#/pricing">Pricing</a>
+            <a class="nav__link" href="#/about">About</a>
+          </nav>
+          <div class="topbar__actions">
+            <button class="btn btn--ghost" id="btnTryDemo" type="button">Try demo</button>
+            <a class="btn btn--ghost" href="#/login">Login</a>
+            <a class="btn btn--primary" href="#/signup">Create assistant</a>
+          </div>
+        </div>
+      </div>
+
+      <main id="main" class="main"></main>
+
+      <footer class="footer">
+        <div class="container footer__inner">
+          <div class="footer__left">
+            <div class="brand brand--small">
+              <span class="brand__mark">N</span>
+              <span class="brand__name">NOVA AI</span>
+            </div>
+            <div class="muted">Named AI assistant for students & daily life.</div>
+          </div>
+          <div class="footer__links">
+            <a href="#/about">About</a>
+            <a href="#/pricing">Pricing</a>
+            <a href="#/privacy">Privacy</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div id="toastRoot" class="toastRoot" aria-live="polite" aria-atomic="true"></div>
+
+    <div id="modalRoot" class="modalRoot hidden" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="modalBackdrop" data-close="true"></div>
+      <div class="modal" role="document">
+        <div class="modal__head">
+          <div class="modal__title" id="modalTitle">Reminder</div>
+          <button class="iconBtn" type="button" aria-label="Close" data-close="true">✕</button>
+        </div>
+        <div class="modal__body" id="modalBody"></div>
+        <div class="modal__foot">
+          <button class="btn btn--ghost" type="button" data-close="true">Dismiss</button>
+          <button class="btn btn--primary" type="button" id="modalSpeak">Speak again</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
